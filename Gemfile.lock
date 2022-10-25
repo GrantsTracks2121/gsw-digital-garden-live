@@ -1,12 +1,3 @@
-GIT
-  remote: https://github.com/maximevaillancourt/jekyll-last-modified-at
-  revision: e0c918691db625401ef5850a030da59d0124d356
-  branch: add-support-for-files-in-git-submodules
-  specs:
-    jekyll-last-modified-at (1.3.0)
-      jekyll (>= 3.7, < 5.0)
-      posix-spawn (~> 0.3.9)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -83,7 +74,6 @@ GEM
       sawyer (~> 0.9)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    posix-spawn (0.3.15)
     public_suffix (4.0.6)
     racc (1.6.0)
     rb-fsevent (0.10.4)
@@ -108,7 +98,6 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 4.0)
-  jekyll-last-modified-at!
   jekyll-wikilinks (~> 0.0.12)
   minimal-mistakes-jekyll
   nokogiri
