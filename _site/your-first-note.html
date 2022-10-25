@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+
+  <link rel="canonical" href="/your-first-note" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Welcome!">
+
+  <meta property="og:site_name" content="My digital garden">
+
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+
+  <link rel="stylesheet" href="/styles.css">
+
+  
+  <meta property="og:description" content="Welcome!"/>
+  
+
+  
+  <meta property="og:title" content="Your first seed">
+  <meta property="og:type" content="article">
+  
+
+  
+  <meta property="article:published_time" content="2022-10-25T07:48:21-06:00">
+  <meta property="article:author" content="/">
+  
+
+  <meta property="og:url" content="/your-first-note" />
+
+  
+
+  <title>
+    
+      Your first seed &mdash; My digital garden
+    
+  </title>
+</head>
+
+  <body>
+    <nav><div>
+    <a class="internal-link" href="/"><b>My digital garden</b></a>
+</div>
+</nav>
+    <div class="wrapper">
+      <main><article>
+  <div>
+    <h1>Your first seed</h1>
+    <time datetime="2022-10-25T06:57:09-06:00">
+      Last updated on October 25, 2022
+      
+    </time>
+  </div>
+
+  <div id="notes-entry-container">
+    <content>
+      <html><body>
+<h3 id="welcome">Welcome!</h3>
+
+<p>This is your first note. You’ll find it in the <a href="https://github.com/maximevaillancourt/digital-garden-jekyll-template/tree/master/_notes" target="_blank"><code class="language-plaintext highlighter-rouge">notes/</code></a> directory.</p>
+
+<p>GSW as arrived and is now editing this home page note. He’s been busy. In fact, he’s made TWO notes and they are:
+<a class="internal-link" href="/my-new-digital-garden">My new digital garden</a> and <a class="internal-link" href="/another-note">Another note</a></p>
+
+<h3 id="link-syntax">Link syntax</h3>
+
+<p>To link to another note, you can use multiple syntaxes. The following four use the “double-bracket” notation (<a href="https://github.com/maximevaillancourt/digital-garden-jekyll-template/blob/master/_notes/your-first-note.md#link-syntax" target="_blank">view the Markdown source file</a> to see the underlying syntax).</p>
+
+<ul>
+  <li>Using the note title: <a class="internal-link" href="/cats">a note about cats</a>
+</li>
+  <li>Using the note’s filename: <a class="internal-link" href="/cats">cats</a>
+</li>
+  <li>Using the note’s title, with a label: <a class="internal-link" href="/cats">link to the note about cats using the note title</a>
+</li>
+  <li>Using the note’s filename, with a label: <a class="internal-link" href="/cats">link to the note about cats using the note’s filename</a>
+</li>
+</ul>
+
+<p>You can organize notes in subdirectories and link them normally. For example, the links above all point to the <code class="language-plaintext highlighter-rouge">_notes/animals/cats.md</code> file. Here’s another example: <a class="internal-link" href="/tigers">tigers</a>.</p>
+
+<p>Non-latin languages are supported too: <a class="internal-link" href="/%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94">안녕하세요</a>.</p>
+
+<p>Dashes and underscores in file names are supported, and may be omitted in the bracket link syntax. As an example, the <code class="language-plaintext highlighter-rouge">your-first-note.md</code> file can be linked to with <a class="internal-link" href="/your-first-note">your first note</a> or <a class="internal-link" href="/your-first-note">your-first-note</a>, or even <a class="internal-link" href="/your-first-note">yOuR-FiRsT Note</a>.</p>
+
+<p>In all cases, if the double-bracket link does not point to a valid note, the double brackets will still be shown, like this: <span title="There is no note that matches this link." class="invalid-link">  <span class="invalid-link-brackets">[[</span>  there is no note that matches this link  <span class="invalid-link-brackets">]]</span></span>.</p>
+
+<p>Alternatively, you can use regular <a href="https://www.markdownguide.org/getting-started/" target="_blank">Markdown syntax</a> for links, with a relative link to the other note, like this: <a href="/cats" class="internal-link">this is a Markdown link to the note about cats</a>. Don’t forget to use the <code class="language-plaintext highlighter-rouge">.internal-link</code> class to make sure the link is styled as an internal link (without the little arrow).</p>
+
+<p>Since the Web is all about HTML, you can always use plain HTML if you want, like this: <a class="internal-link" href="/cats">This is a link to the note about cats with HTML</a>.</p>
+
+<p>Of course, you can also link to external websites, like this: <a href="https://wikipedia.org/" target="_blank">this is a link to Wikipedia</a>. Again, you can use plain HTML if you prefer. Footnotes are also supported and will be treated like internal links.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> You can point to other notes in your footnotes.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup></p>
+
+<h3 id="tweet-embedding">Tweet embedding</h3>
+
+<p>Note: This behavior is disabled by default for privacy reasons. See “Site configuration” section below to enable it.</p>
+
+<p>You may include a tweet URL on its own line (like below), and it would be replaced with an official Twitter embed if the site configuration demands it.</p>
+
+<p>https://twitter.com/jack/status/20</p>
+
+<h3 id="media-embedding">Media embedding</h3>
+
+<p>You may embed media files within a note using HTML5 media tags. Here’s an example for an audio file:</p>
+
+<p>“Jazzy Frenchy” by Benjamin Tissot from bensound.com</p>
+<audio controls="">
+  <source src="/assets/jazzyfrenchy.mp3" type="audio/mpeg"></source>
+  Your browser does not support the audio element.
+</audio>
+
+<h3 id="site-configuration">Site configuration</h3>
+
+<p>Some behavior is configurable by tweaking the <code class="language-plaintext highlighter-rouge">_config.yml</code> file.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">use_html_extension</code></strong>: if you use a static host that doesn’t support URLs that don’t end with <code class="language-plaintext highlighter-rouge">.html</code> (such as Neocities), try changing the <code class="language-plaintext highlighter-rouge">use_html_extension</code> value to <code class="language-plaintext highlighter-rouge">true</code> in the <code class="language-plaintext highlighter-rouge">_config.yml</code> file and restart the Jekyll server (or re-build the site). This adds a <code class="language-plaintext highlighter-rouge">.html</code> extension to note URLs and may resolve issues with links. If you’re still having trouble, I recommend using Netlify to host your digital garden: it’s free, easy to use, and fully supports this template’s features out of the box.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">open_external_links_in_new_tab</code></strong>: when set to <code class="language-plaintext highlighter-rouge">true</code>, this makes external links open in new tabs. Set to <code class="language-plaintext highlighter-rouge">false</code> to open all links in the current tab.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">embed_tweets</code></strong>: when set to <code class="language-plaintext highlighter-rouge">true</code>, tweet URLs on their own lines will be replaced with a Twitter embed. Default value is <code class="language-plaintext highlighter-rouge">false</code>.</p>
+
+<h3 id="automatic-bi-directional-links">Automatic bi-directional links</h3>
+
+<p>Notice in the “Notes mentioning this note” section that there is another note linking to this note. This is a bi-directional link, and those are automatically created when you create links to other notes.</p>
+
+<h3 id="link-previews">Link previews</h3>
+
+<p>If you’re on a device with mouse support, try hovering your mouse on internal links to preview the notes: <a class="internal-link" href="/cats">a note about cats</a>.</p>
+
+<p>Links that have been previewed will be cached to avoid redundant requests.</p>
+
+<h3 id="images-and-other-markdown-goodies">Images and other Markdown goodies</h3>
+
+<p>Finally, because you have the full power of Markdown in this template, you can use regular Markdown syntax for various formatting options.</p>
+
+<p>Lists work as expected:</p>
+
+<ul>
+  <li>List element A</li>
+  <li>List element B</li>
+  <li>List element C</li>
+</ul>
+
+<ol>
+  <li>List element</li>
+  <li>List element</li>
+  <li>List element</li>
+</ol>
+
+<p>If you’d like to quote other people, consider using quote blocks:</p>
+
+<blockquote>
+  <p>Lorem ipsum dolor sit amet</p>
+</blockquote>
+
+<p>And of course, images look great:</p>
+
+<p><img src="/assets/image.jpg"></p>
+
+<p>You can also <mark>highlight some content</mark> by wrapping it with <code class="language-plaintext highlighter-rouge">==</code>.</p>
+
+<p>Non-latin languages are supported too: <mark>你好</mark>, <mark>안녕하세요</mark>, <mark>こんにちは</mark>.</p>
+
+<h3 id="code-syntax-highlighting">Code syntax highlighting</h3>
+
+<p>You can add code blocks with full syntax color highlighting by wrapping code snippet in triple backticks and specifying the type of the code (<code class="language-plaintext highlighter-rouge">js</code>, <code class="language-plaintext highlighter-rouge">rb</code>, <code class="language-plaintext highlighter-rouge">sh</code>, etc.):</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Here's a bit of JavaScript:</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">hello!</span><span class="dl">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># And now some Ruby</span>
+<span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">bar</span><span class="p">)</span>
+  <span class="s2">"baz"</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cat</span> /dev/urandom | <span class="nb">grep</span> <span class="s2">"the answer to life"</span> <span class="c"># shell scripts look nice too</span>
+</code></pre></div></div>
+
+<h3 id="next-steps">Next steps</h3>
+
+<p>This digital garden template is free, open-source, and <a href="https://github.com/maximevaillancourt/digital-garden-jekyll-template" target="_blank">available on GitHub here</a>.</p>
+
+<p>The easiest way to build your own digital garden based on this template is to read this <a href="https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll" target="_blank">step-by-step guide explaining how to set this up from scratch</a>.</p>
+
+<p>Go forth, have fun, and learn new something every day! ✌️</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>This is a footnote. For more information about using footnotes, check out the <a href="https://www.markdownguide.org/extended-syntax/#footnotes" target="_blank">Markdown Guide</a>. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>This is another footnote that links to the note about <a class="internal-link" href="/cats">cats</a>. You may also point to <span title="There is no note that matches this link." class="invalid-link">  <span class="invalid-link-brackets">[[</span>  notes that do not exist  <span class="invalid-link-brackets">]]</span></span> if you wish. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
+</body></html>
+    </content>
+
+    <side style="font-size: 0.9em">
+      <h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
+      
+      <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/consistency">Consistency is key</a><br>
+        <div style="font-size: 0.9em">Show up. Do the work. Be consistent.
+</div>
+        </div>
+      
+        <div class="backlink-box">
+        <a class="internal-link" href="/your-first-note">Your first seed</a><br>
+        <div style="font-size: 0.9em">Welcome!
+</div>
+        </div>
+      
+      </div>
+      
+    </side>
+  </div>
+</article>
+
+<hr>
+
+<p>Here are all the notes in this garden, along with their links, visualized as a graph.</p>
+
+<style>
+  .links line {
+    stroke: #ccc;
+    opacity: 0.5;
+  }
+
+  .nodes circle {
+    cursor: pointer;
+    fill: #8b88e6;
+    transition: all 0.15s ease-out;
+  }
+
+  .text text {
+    cursor: pointer;
+    fill: #333;
+    text-shadow: -1px -1px 0 #fafafabb, 1px -1px 0 #fafafabb, -1px 1px 0 #fafafabb, 1px 1px 0 #fafafabb;
+  }
+
+  .nodes [active],
+  .text [active] {
+    cursor: pointer;
+    fill: black;
+  }
+
+  .inactive {
+    opacity: 0.1;
+    transition: all 0.15s ease-out;
+  }
+
+  #graph-wrapper {
+    background: #fcfcfc;
+    border-radius: 4px;
+    height: auto;
+  }
+</style>
+
+<div id="graph-wrapper">
+  <script>
+    var commentFlag = true;
+    
+    window.addEventListener("load", loadGraph);
+    window.addEventListener("scroll", loadGraph);
+
+    function loadGraph() {
+      if (!( document.getElementById("graph-wrapper").getBoundingClientRect().top <
+             window.innerHeight * 1.5 &&
+          commentFlag)){
+        return;
+      }
+      var oScript = document.createElement("script");
+      oScript.src = "https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js";
+      oScript.crossOrigin = 'anonymous';
+      oScript.integrity =
+        "sha512-FHsFVKQ/T1KWJDGSbrUhTJyS1ph3eRrxI228ND0EGaEp6v4a/vGwPWd3Dtd/+9cI7ccofZvl/wulICEurHN1pg==";
+      document.body.appendChild(oScript);
+      oScript.onload = () => {
+        const MINIMAL_NODE_SIZE = 8;
+        const MAX_NODE_SIZE = 12;
+        const ACTIVE_RADIUS_FACTOR = 1.5;
+        const STROKE = 1;
+        const FONT_SIZE = 16;
+        const TICKS = 200;
+        const FONT_BASELINE = 40;
+        const MAX_LABEL_LENGTH = 50;
+
+        const graphData = {"edges":[{"source":"771213211010111932100105103105116971083210397114100101110","target":"6511011111610410111432110111116101"},{"source":"891111171143210210511411511632115101101100","target":"6511011111610410111432110111116101"},{"source":"891111171143210210511411511632115101101100","target":"771213211010111932100105103105116971083210397114100101110"},{"source":"891111171143210210511411511632115101101100","target":"6532110111116101329798111117116329997116115"},{"source":"891111171143210210511411511632115101101100","target":"84105103101114115"},{"source":"77111118101321211111171143298111100121321011181011141213210097121","target":"67111110115105115116101110991213210511532107101121"},{"source":"6532110111116101329798111117116329997116115","target":"77111118101321211111171143298111100121321011181011141213210097121"},{"source":"67111110115105115116101110991213210511532107101121","target":"891111171143210210511411511632115101101100"},{"source":"891111171143210210511411511632115101101100","target":"891111171143210210511411511632115101101100"},{"source":"891111171143210210511411511632115101101100","target":"236149136235133149237149152236132184236154148"}],"nodes":[{"id":"6511011111610410111432110111116101","path":"/another-note","label":"Another note"},{"id":"771213211010111932100105103105116971083210397114100101110","path":"/my-new-digital-garden","label":"My new digital garden"},{"id":"6532110111116101329798111117116329997116115","path":"/cats","label":"A note about cats"},{"id":"84105103101114115","path":"/tigers","label":"Tigers"},{"id":"67111110115105115116101110991213210511532107101121","path":"/consistency","label":"Consistency is key"},{"id":"77111118101321211111171143298111100121321011181011141213210097121","path":"/move-your-body-every-day","label":"Move your body every day"},{"id":"891111171143210210511411511632115101101100","path":"/your-first-note","label":"Your first seed"},{"id":"236149136235133149237149152236132184236154148","path":"/%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94","label":"안녕하세요"}]}
+        let nodesData = graphData.nodes;
+        let linksData = graphData.edges;
+
+        const nodeSize = {};
+
+        const updateNodeSize = () => {
+          nodesData.forEach((el) => {
+            let weight =
+              3 *
+              Math.sqrt(
+                linksData.filter((l) => l.source.id === el.id || l.target.id === el.id)
+                  .length + 1
+              );
+            if (weight < MINIMAL_NODE_SIZE) {
+              weight = MINIMAL_NODE_SIZE;
+            } else if (weight > MAX_NODE_SIZE) {
+              weight = MAX_NODE_SIZE;
+            }
+            nodeSize[el.id] = weight;
+          });
+        };
+
+        const onClick = (d) => {
+          window.location = d.path
+        };
+
+        const onMouseover = function (d) {
+          const relatedNodesSet = new Set();
+          linksData
+            .filter((n) => n.target.id == d.id || n.source.id == d.id)
+            .forEach((n) => {
+              relatedNodesSet.add(n.target.id);
+              relatedNodesSet.add(n.source.id);
+            });
+
+          node.attr("class", (node_d) => {
+            if (node_d.id !== d.id && !relatedNodesSet.has(node_d.id)) {
+              return "inactive";
+            }
+            return "";
+          });
+
+          link.attr("class", (link_d) => {
+            if (link_d.source.id !== d.id && link_d.target.id !== d.id) {
+              return "inactive";
+            }
+            return "";
+          });
+
+          link.attr("stroke-width", (link_d) => {
+            if (link_d.source.id === d.id || link_d.target.id === d.id) {
+              return STROKE * 4;
+            }
+            return STROKE;
+          });
+          text.attr("class", (text_d) => {
+            if (text_d.id !== d.id && !relatedNodesSet.has(text_d.id)) {
+              return "inactive";
+            }
+            return "";
+          });
+        };
+
+        const onMouseout = function (d) {
+          node.attr("class", "");
+          link.attr("class", "");
+          text.attr("class", "");
+          link.attr("stroke-width", STROKE);
+        };
+
+        const sameNodes = (previous, next) => {
+          if (next.length !== previous.length) {
+            return false;
+          }
+
+          const map = new Map();
+          for (const node of previous) {
+            map.set(node.id, node.label);
+          }
+
+          for (const node of next) {
+            const found = map.get(node.id);
+            if (!found || found !== node.title) {
+              return false;
+            }
+          }
+
+          return true;
+        };
+
+        const sameEdges = (previous, next) => {
+          if (next.length !== previous.length) {
+            return false;
+          }
+
+          const set = new Set();
+          for (const edge of previous) {
+            set.add(`${edge.source.id}-${edge.target.id}`);
+          }
+
+          for (const edge of next) {
+            if (!set.has(`${edge.source.id}-${edge.target.id}`)) {
+              return false;
+            }
+          }
+
+          return true;
+        };
+
+        const graphWrapper = document.getElementById('graph-wrapper')
+        const element = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+        element.setAttribute("width", graphWrapper.getBoundingClientRect().width);
+        element.setAttribute("height", window.innerHeight * 0.8);
+        graphWrapper.appendChild(element);
+
+        const reportWindowSize = () => {
+          element.setAttribute("width", window.innerWidth);
+          element.setAttribute("height", window.innerHeight);
+        };
+
+        window.onresize = reportWindowSize;
+
+        const svg = d3.select("svg");
+        const width = Number(svg.attr("width"));
+        const height = Number(svg.attr("height"));
+        let zoomLevel = 1;
+
+        const simulation = d3
+          .forceSimulation(nodesData)
+          .force("forceX", d3.forceX().x(width / 2))
+          .force("forceY", d3.forceY().y(height / 2))
+          .force("charge", d3.forceManyBody())
+          .force(
+            "link",
+            d3
+              .forceLink(linksData)
+              .id((d) => d.id)
+              .distance(70)
+          )
+          .force("center", d3.forceCenter(width / 2, height / 2))
+          .force("collision", d3.forceCollide().radius(80))
+          .stop();
+
+        const g = svg.append("g");
+        let link = g.append("g").attr("class", "links").selectAll(".link");
+        let node = g.append("g").attr("class", "nodes").selectAll(".node");
+        let text = g.append("g").attr("class", "text").selectAll(".text");
+
+        const resize = () => {
+          if (d3.event) {
+            const scale = d3.event.transform;
+            zoomLevel = scale.k;
+            g.attr("transform", scale);
+          }
+
+          const zoomOrKeep = (value) => (zoomLevel >= 1 ? value / zoomLevel : value);
+
+          const font = Math.max(Math.round(zoomOrKeep(FONT_SIZE)), 1);
+
+          text.attr("font-size", (d) => font);
+          text.attr("y", (d) => d.y - zoomOrKeep(FONT_BASELINE) + 8);
+          link.attr("stroke-width", zoomOrKeep(STROKE));
+          node.attr("r", (d) => {
+            return zoomOrKeep(nodeSize[d.id]);
+          });
+          svg
+            .selectAll("circle")
+            .filter((_d, i, nodes) => d3.select(nodes[i]).attr("active"))
+            .attr("r", (d) => zoomOrKeep(ACTIVE_RADIUS_FACTOR * nodeSize[d.id]));
+        };
+
+        const ticked = () => {
+          node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
+          text
+            .attr("x", (d) => d.x)
+            .attr("y", (d) => d.y - (FONT_BASELINE - nodeSize[d.id]) / zoomLevel);
+          link
+            .attr("x1", (d) => d.source.x)
+            .attr("y1", (d) => d.source.y)
+            .attr("x2", (d) => d.target.x)
+            .attr("y2", (d) => d.target.y);
+        };
+
+        const restart = () => {
+          updateNodeSize();
+          node = node.data(nodesData, (d) => d.id);
+          node.exit().remove();
+          node = node
+            .enter()
+            .append("circle")
+            .attr("r", (d) => {
+              return nodeSize[d.id];
+            })
+            .on("click", onClick)
+            .on("mouseover", onMouseover)
+            .on("mouseout", onMouseout)
+            .merge(node);
+
+          link = link.data(linksData, (d) => `${d.source.id}-${d.target.id}`);
+          link.exit().remove();
+          link = link.enter().append("line").attr("stroke-width", STROKE).merge(link);
+
+          text = text.data(nodesData, (d) => d.label);
+          text.exit().remove();
+          text = text
+            .enter()
+            .append("text")
+            .text((d) => shorten(d.label.replace(/_*/g, ""), MAX_LABEL_LENGTH))
+            .attr("font-size", `${FONT_SIZE}px`)
+            .attr("text-anchor", "middle")
+            .attr("alignment-baseline", "central")
+            .on("click", onClick)
+            .on("mouseover", onMouseover)
+            .on("mouseout", onMouseout)
+            .merge(text);
+
+          node.attr("active", (d) => isCurrentPath(d.path) ? true : null);
+          text.attr("active", (d) => isCurrentPath(d.path) ? true : null);
+
+          simulation.nodes(nodesData);
+          simulation.force("link").links(linksData);
+          simulation.alpha(1).restart();
+          simulation.stop();
+
+          for (let i = 0; i < TICKS; i++) {
+            simulation.tick();
+          }
+
+          ticked();
+        };
+
+        const zoomHandler = d3.zoom().scaleExtent([0.2, 3]).on("zoom", resize);
+
+        zoomHandler(svg);
+        restart();
+
+        function isCurrentPath(notePath) {
+          return window.location.pathname.includes(notePath)
+        }
+
+        function shorten(str, maxLen, separator = ' ') {
+          if (str.length <= maxLen) return str;
+          return str.substr(0, str.lastIndexOf(separator, maxLen)) + '...';
+        }
+        commentFlag = false;
+      }
+    }
+  </script>
+</div>
+
+</main>
+      <footer>This is the footer. Include anything you'd like here, like a link to an <a class="internal-link" href="/about">About</a> page.
+</footer>
+    </div>
+
+    <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+  content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+  }
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+  document.querySelectorAll('content a').forEach(setupListeners);
+</script>
+
+  </body>
+</html>
