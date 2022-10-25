@@ -1,6 +1,6 @@
 var store = [{
         "title": "A new file with wikilinks",
-        "excerpt":" Get Ready for this:  Here’s a picture inserted with wikilink format !  [[  download.png  ]]   and links to other files:     your-first-note   move your body every day   consistency  ","categories": [],
+        "excerpt":"Get Ready for this: Here’s a picture inserted with wikilink format And NOPE adding this image using the wikilink format doesn’t work. So simply go standard. You can test all the options you worked up for MkDocs here too. ! [[ download.png ]] Here’s the same images above in standard...","categories": [],
         "tags": [],
         "url": "/a-new-file-with-wikilinks",
         "teaser": null

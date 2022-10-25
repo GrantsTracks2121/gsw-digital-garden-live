@@ -7,7 +7,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Get Ready for this:Here’s a picture inserted with wikilink format![[download.png]]">
+  <meta name="description" content="Get Ready for this:Here’s a picture inserted with wikilink formatAnd NOPE adding this image using the wikilink format doesn’t work. So simply go standard. Yo...">
 
   <meta property="og:site_name" content="My digital garden">
 
@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="/styles.css">
 
   
-  <meta property="og:description" content="Get Ready for this:Here’s a picture inserted with wikilink format![[download.png]]"/>
+  <meta property="og:description" content="Get Ready for this:Here’s a picture inserted with wikilink formatAnd NOPE adding this image using the wikilink format doesn’t work. So simply go standard. Yo..."/>
   
 
   
@@ -25,7 +25,7 @@
   
 
   
-  <meta property="article:published_time" content="2022-10-25T09:31:24-06:00">
+  <meta property="article:published_time" content="2022-10-25T09:44:08-06:00">
   <meta property="article:author" content="/">
   
 
@@ -60,7 +60,24 @@
       <html><body>
 <h2 id="get-ready-for-this">Get Ready for this:</h2>
 <p>Here’s a picture inserted with wikilink format
-!<span title="There is no note that matches this link." class="invalid-link">  <span class="invalid-link-brackets">[[</span>  download.png  <span class="invalid-link-brackets">]]</span></span></p>
+And NOPE adding this image using the wikilink format doesn’t work. So simply go standard. You can test all the options you worked up for MkDocs here too.</p>
+
+<p>!<span title="There is no note that matches this link." class="invalid-link">  <span class="invalid-link-brackets">[[</span>  download.png  <span class="invalid-link-brackets">]]</span></span></p>
+
+<p>Here’s the same images above in standard markdown image format:
+<img src="assets/download%201.png" alt="" title="Here's the Alt text"></p>
+
+<p>THIS code works in Jekyll!!</p>
+
+<p>It like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![](assets/download%201.png "Here's the Alt text"){: width="300px" style="float:right; vspace:20px; hspace:20px" }
+</code></pre></div></div>
+
+<p><img src="assets/download%201.png" alt="" title="Here's the Alt text" width="300px" style="float:right; vspace:20px; hspace:20px"> Look Mom! I can align right!!</p>
+
+<p>Phasellus eu erat quis augue placerat porttitor. Curabitur lobortis congue dolor ac maximus. Nullam porttitor enim felis, quis pretium tellus vehicula non. Aliquam venenatis varius eleifend. Morbi odio ex, pellentesque sed convallis ut, auctor vitae risus. Aliquam at nulla ac arcu mollis fringilla. Aliquam nisi est, vehicula quis enim sit amet, efficitur dictum mauris. 
+Nam a. sem augue. Phasellus eu erat quis augue placerat porttitor. Curabitur lobortis congue dolor ac maximus. Nullam porttitor enim felis, quis pretium tellus vehicula non. Aliquam venenatis varius eleifend. Morbi odio ex, pellentesque sed convallis ut, auctor vitae risus. Aliquam at nulla ac arcu mollis fringilla. Aliquam nisi est, vehicula quis enim sit amet, efficitur dictum mauris.</p>
 
 <p>and links to other files:</p>
 <ul>
