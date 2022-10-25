@@ -10,4 +10,4 @@ Yet?
 
 What's wrong with this picture?
 
-![[Great-job.jpg | alt=This is the Alt Text for the image | What's wrong with this picture?]]
+![Great job](assets/Great-job.jpg)
