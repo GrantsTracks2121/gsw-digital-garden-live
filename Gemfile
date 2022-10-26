@@ -9,4 +9,7 @@ gem "jekyll", "~> 4.0"
 gem "webrick", "~> 1.7"
 gem "nokogiri"
 gem 'jekyll-wikilinks', '~> 0.0.12'
-gem "minimal-mistakes-jekyll" 
+gem "minimal-mistakes-jekyll"
+group :jekyll_plugins do
+  gem "jekyll-last-modified-at"
+end

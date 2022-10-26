@@ -1,4 +1,4 @@
-title:               My digital garden
+title:               Grant's Sparks in the Dark
 include:             ['_pages']
 exclude:             ['_includes/notes_graph.json']
 # You may need to change the base URL depending on your deploy configuration.
@@ -23,8 +23,8 @@ permalink:           pretty
 relative_permalinks: false
 
 plugins:
-  - jekyll-wikilinks
-#  - jekyll-last-modified-at
+#  - jekyll-wikilinks
+  - jekyll-last-modified-at
 
 sass:
   sass_dir:          _sass
