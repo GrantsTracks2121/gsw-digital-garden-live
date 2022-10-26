@@ -10,6 +10,7 @@ GSW as arrived and is now editing this home page note. He's been busy. In fact, 
 [[My new digital garden]] and [[Another note]]
 
 And a wikilink note: [[A new file with wikilinks]]
+and just as a test here is [This is the title of the new note](This%20is%20the%20title%20of%20the%20new%20note.md)
 
 ### Link syntax
 
