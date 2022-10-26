@@ -3,16 +3,20 @@ title: Your first seed
 ---
 
 ### Welcome!
-
+[consistency](consistency.md)
+[move your body every day](move your body every day.md)
+[This is the title of the new note](This is the title of the new note.md)
+[안녕하세요](안녕하세요.md)
+[A new file with wikilinks](A new file with wikilinks.md)
+[move your body every day](move your body every day.md)
 This is your first note. You'll find it in the [`notes/`](https://github.com/maximevaillancourt/digital-garden-jekyll-template/tree/master/_notes) directory. 
 
 GSW as arrived and is now editing this home page note. He's been busy. In fact, he's made TWO notes and they are:
 [[My new digital garden]] and [[Another note]]
 
 And a wikilink note: [[A new file with wikilinks]] 
-and just as a test here is [consistency](consistency.md) and [This is the title of the new note](This  is  the  title  of  the  new  note.md)
-
-
+and just as a test here is [consistency](consistency.md) and 
+This
 
 ### Link syntax
 
@@ -55,8 +59,8 @@ You may embed media files within a note using HTML5 media tags. Here's an exampl
 
 "Jazzy Frenchy" by Benjamin Tissot from bensound.com
 <audio controls>
-  <source src="/assets/jazzyfrenchy.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
+ <source src="/assets/jazzyfrenchy.mp3" type="audio/mpeg">
+ Your browser does not support the audio element.
 </audio>
 
 ### Site configuration
@@ -117,7 +121,7 @@ console.log('hello!')
 ```rb
 # And now some Ruby
 def foo(bar)
-  "baz"
+ "baz"
 end
 ```
 
